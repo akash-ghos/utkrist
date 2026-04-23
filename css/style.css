@@ -554,8 +554,11 @@ body {
 
 .steps {
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin: 10% 40px 10% 40px;
 }
@@ -563,17 +566,21 @@ body {
 .step {
 
     background: #fff;
-    border: 2px solid #ff9900;
+    /* #88888856 */
+    border: 2px solid #88888856;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(65, 65, 65, 0.1);
+    transition: all 0.3s ease;
     text-align: center;
+    cursor: pointer;
+    flex-grow: 1;
 }
 
 .step:hover {
 
     transform: translateY(-8px);
+    border: 2px solid #ff9900;
 }
 
 .icon {
@@ -763,6 +770,42 @@ body {
     font-size: 17px;
 }
 
+.file-input {
+
+    display: none;
+}
+
+.file-area {
+
+    width: 100%;
+    border: 2px dashed #FF9C2B;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+}
+
+.file-select-icon {
+
+    color: #FF9C2B;
+    font-size: 20px;
+}
+
+.file-select-text {
+
+    font-size: 14px;
+    color: rgb(138, 138, 138);
+    font-weight: bold;
+}
+
+.file-element {
+
+    margin: 3px;
+}
+
 .submit-inputs::placeholder {
 
     color: rgb(73, 73, 73);   
@@ -802,6 +845,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.animated-gifs {
+
+    position: absolute;
+}
+
+.brain-gif {
+
+    top: 10%;
+    left: 10%;
+}
+
+.progress-gif {
+
+    top: 5%;
+    left: 80%;
+}
+
+.guiterist-gif {
+
+    top: 80%;
+    left: 15%;
+    /* width: 200px; */
+    /* height: 200px; */
+}
+
+.music-gif {
+
+    position: absolute;
+    z-index: 10;
+}
+
+.artist-gif {
+
+    top: 85%;
+    left: 80%;
 }
 
 .brand-recognition-texts {
@@ -1083,6 +1164,16 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    .brain-gif {
+
+        left: 5%;
+    }
+
+    .guiterist-gif {
+
+        left: 7%;
+    }
 }
 
 
@@ -1210,6 +1301,16 @@ body {
         margin: 40px;
         flex-wrap: wrap;
         flex-grow: 1;
+    }
+
+    .progress-gif {
+
+        left: 70%;
+    }
+
+    .artist-gif {
+
+        left: 70%;
     }
 
 }
@@ -1395,6 +1496,31 @@ body {
     .copyright-contents {
 
         font-size: 10px;
+    }
+
+    .animated-gifs {
+
+        height: 100px;
+    }
+
+    .brain-gif {
+
+        top: 15%;
+    }
+
+    .guiterist-gif {
+
+        top: 75%;
+    } 
+
+    .progress-gif {
+
+        left: 60%;
+    }
+
+    .artist-gif {
+
+        left: 60%;
     }
 }
 
