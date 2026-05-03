@@ -806,6 +806,48 @@ body {
     margin: 3px;
 }
 
+.file-selected-area {
+
+    display: flex;
+    background-color: rgba(199, 199, 199, 0.205);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+}
+
+.file-name-sec {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-icon {
+
+    font-size: 20px;
+    color: grey;
+}
+
+.file-name {
+
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrong-mark {
+
+    color: grey;
+    cursor: pointer;
+}
+
 .submit-inputs::placeholder {
 
     color: rgb(73, 73, 73);   
@@ -882,6 +924,18 @@ body {
 .artist-gif {
 
     top: 85%;
+    left: 80%;
+}
+
+.sculpting-gif {
+
+    top: 40%;
+    left: 10%;
+}
+
+.video-gif {
+
+    top: 40%;
     left: 80%;
 }
 
@@ -1173,6 +1227,18 @@ body {
     .guiterist-gif {
 
         left: 7%;
+    }
+
+    .sculpting-gif {
+
+        top: 10%;
+        left: 40%;   
+    }
+
+    .video-gif {
+
+        top: 80%;
+        left: 40%;
     }
 }
 
@@ -1510,17 +1576,29 @@ body {
 
     .guiterist-gif {
 
-        top: 75%;
+        top: 80%;
     } 
 
     .progress-gif {
 
-        left: 60%;
+        left: 70%;
     }
 
     .artist-gif {
 
         left: 60%;
+    }
+
+    .sculpting-gif {
+
+        top: 20%;
+        left: 40%;   
+    }
+
+    .video-gif {
+
+        top: 70%;
+        left: 40%;
     }
 }
 
